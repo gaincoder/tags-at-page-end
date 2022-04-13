@@ -1,0 +1,13 @@
+{
+	"plugin-data":
+	{
+		"name": "Announcement",
+		"description": "This plugin shows an announcement banner on the top of each page."
+	},
+	"html-allowed": "HTML allowed",
+	"start": "Start",
+	"end": "End",
+	"bordercolor": "Border color",
+	"borderwidth": "Border width",
+	"text": "Content"
+}
