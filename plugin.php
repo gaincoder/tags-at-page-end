@@ -37,7 +37,7 @@ class pluginTagsEndPage extends Plugin {
         global $url;
 
         $html = '';
-        if(count($page->getValue('tags')) &&  $url->uri() == $page->url(false) ) {
+        if(count($page->getValue('tags')) &&  $url->whereAmI() == 'page' ) {
             $html .= '<' . $this->getValue('tag') . '>' . $this->getValue('title') . '</' . $this->getValue('tag') . '>';
             $tagsLinks = array();
             foreach ($page->getValue('tags') as $key => $tag) {
