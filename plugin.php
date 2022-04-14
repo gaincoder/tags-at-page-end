@@ -41,7 +41,7 @@ class pluginTagsEndPage extends Plugin {
             $html .= '<' . $this->getValue('tag') . '>' . $this->getValue('title') . '</' . $this->getValue('tag') . '>';
             $tagsLinks = array();
             foreach ($page->getValue('tags') as $key => $tag) {
-                $tagsLinks[] = '<a href="'.DOMAIN_TAGS.$key.'">'.$tag;
+                $tagsLinks[] = '<a href="'.DOMAIN_TAGS.$key.'">'.$tag.'</a>';
             }
             $html .= implode($this->getValue('separator'),$tagsLinks);
         }
