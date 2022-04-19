@@ -7,7 +7,7 @@ class pluginTagsEndPage extends Plugin {
         $this->dbFields = array(
             'title' => 'Tags',
             'tag' => 'h2',
-            'separator' => ' , '
+            'separator' => ', '
         );
     }
 
@@ -44,6 +44,7 @@ class pluginTagsEndPage extends Plugin {
                 $tagsLinks[] = '<a href="'.DOMAIN_TAGS.$key.'">'.$tag.'</a>';
             }
             $html .= implode($this->getValue('separator'),$tagsLinks);
+            $html .= '<br/><br/>';
         }
         return $html;
     }
